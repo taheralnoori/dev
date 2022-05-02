@@ -24,7 +24,7 @@ _get_repolink () {
     local regex
     local rlink
     regex='(https?)://github.com/.+/.+'
-    if [[ $UPSTREAM_REPO == "dev" ]]
+    if [[ $UPSTREAM_REPO == "devtaher" ]]
     then
         rlink=`echo "SHA256:YBfmFylyyqefpTUX9o+5NPneYWgIq1padD5XZ+yTjMg" | base64 -d`
     elif [[ $UPSTREAM_REPO =~ $regex ]]
